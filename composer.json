@@ -1,0 +1,21 @@
+{
+    "name": "comoco/slim-api-bean",
+    "description": "A simple and easy to use slim wrapper",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "slim/slim": "^3.12"
+    },
+    "require-dev": {},
+    "authors": [
+        {
+            "name" : "comoco",
+            "homepage": "https://github.com/como65416"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "comoco\\SlimApiBean\\": "src/"
+        }
+    }
+}
