@@ -210,8 +210,6 @@ class SlimAppUtil
                 }
             }
             $body->write(implode("&", $datas));
-        } else if ($content_type != 'multipart/form-data') {
-            $body->write($body_datas);
         }
         return $body;
     }
