@@ -202,7 +202,9 @@ class Bean
     }
 
     /**
-     * @return array @see createSlimApp function `$config`
+     * generate config for create slim app
+     *
+     * @return array @see comoco\SlimApiBean\Utils\SlimAppUtil createSlimApp function `$config`
      */
     protected function generateConfig()
     {

@@ -3,15 +3,10 @@
 namespace comoco\SlimApiBean\Handler;
 
 use comoco\SlimApiBean\Utils\ResponseNormalizer;
+use comoco\SlimApiBean\Handler\BaseHandler;
 
-abstract class AbstractNotAllowedHandler
+abstract class AbstractNotAllowedHandler extends BaseHandler
 {
-    public function __invoke($request, $response, $methods)
-    {
-        $data = $this->handle($request, $response, $methods);
-        return ResponseNormalizer::convert($response, $data);
-    }
-
     /**
      * @param  Slim\Http\Request $request
      * @param  Slim\Http\Response $response
