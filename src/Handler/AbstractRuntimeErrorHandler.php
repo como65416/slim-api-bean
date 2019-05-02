@@ -3,15 +3,10 @@
 namespace comoco\SlimApiBean\Handler;
 
 use comoco\SlimApiBean\Utils\ResponseNormalizer;
+use comoco\SlimApiBean\Handler\BaseHandler;
 
-abstract class AbstractRuntimeErrorHandler
+abstract class AbstractRuntimeErrorHandler extends BaseHandler
 {
-    public function __invoke($request, $response, $error)
-    {
-        $data = $this->handle($request, $response, $error);
-        return ResponseNormalizer::convert($response, $data);
-    }
-
     /**
      * @param  Slim\Http\Request $request
      * @param  Slim\Http\Response $response
